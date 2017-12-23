@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TrainTime</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-CF64UnUzxV691sOmqagn+TQJmesKn1fgsYmlIPqYB5nm0m32jYo3LiX1BcrbuESZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="display-4">TrainTime - MomentJS & Firebase</h1>
+            <h4 class="lead">Week 7 Homework - Owen Geoghegan</h4>
+            <hr class="my-4">
+        </div>
+
+        <div class="panel  panel-success">
+            <div class="panel-heading">Train Schedule</div>
+
+            <table class="table table-dark" id="trains">
+                <thead>
+                    <tr class="table-active" id="train-info">
+                        <th scope="row">Train Departure Location (Train Name)</th>
+                        <th scope="row">Train Destination</th>
+                        <th scope="row">Frequency in (min)</th>
+                        <th scope="row">Next Arrival</th>
+                        <th scope="row">Minutes Away</th>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+
+        <div class="panel panel-info panel-danger">
+            <div class="panel-heading">Add Train for Scheduling Information:</div>
+
+            <form>
+                <label for="name">Train Departure Location (Train Name)</label>
+                <input type="name" class="form-control" id="name-input" placeholder="Name">
+
+                <div class="form-group">
+                    <label for="destination">Train Destination</label>
+                    <input type="destination" class="form-control" id="destination-input" placeholder="Destination">
+                </div>
+                <div class="form-group">
+                    <label for="first train time">First Train Time (HH:mm - military) </label>
+                    <input type="first train" class="form-control" id="first-train-input" placeholder="(HH:mm)">
+                </div>
+                <div class="form-group">
+                    <label for="frequency">Minutes Away</label>
+                    <input type="frequency" class="form-control" id="frequency-input" placeholder="Frequency in (min)">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="add-train">Go!</button>
+            </form>
+
+        </div>
+
+        <script src="assets/javascript/app.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Bungee+Inline|Libre+Barcode+128+Text|Lobster+Two|Raleway|Zilla+Slab+Highlight');
+.container {
+    width: 70%;
+}
+
+body {
+    background-position: center;
+}
+
+.jumbotron {
+    background-image: url("../images/christmas-colour.png");
+    background-size: 225px;
+    background-position: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 80%;
+    font-family: "Bungee Inline", cursive;
+}
+
+h4 {
+    text-align: center;
+    color: salmon;
+    font-family: "Libre Barcode 128 Text", cursive;
+    font-size: 180%;
+}
+
+form {
+    margin: 12px;
+}
+
+form {
+    font-family: "Raleway", sans-serif;
+}
+
+table {
+    font-family: "Raleway", sans-serif;
+}
